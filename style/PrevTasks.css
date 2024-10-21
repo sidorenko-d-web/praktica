@@ -1,0 +1,71 @@
+.prev-tasks-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  .content {
+    margin-top: 4rem;
+    background: #8c44d8;
+    border-radius: 32px;
+    padding: 2rem 2.25rem;
+
+    .controls {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      .select {
+        background: white;
+        color: #8c44d8;
+      }
+      .link-in-controls {
+        font-size: 1.25rem;
+        text-decoration: underline;
+        display: inline-block;
+      }
+    }
+
+    .downloads {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+
+      button{
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 15px;
+        padding: 1rem 1.5rem;
+        border: none;
+        gap: 1.5rem;
+        font-size: 1.25rem;
+        color: #8c44d8;
+        font-weight: 600;
+      }
+
+      .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+      }
+    }
+  }
+  .link{
+    display: inline-block;
+    font-size: 1.5rem;
+    background: #8c44d8;
+    border-radius: 9999px;
+    color: white;
+    text-decoration: underline;
+    padding: 1rem 2.25rem;
+    margin-top: 4rem;
+  }
+}

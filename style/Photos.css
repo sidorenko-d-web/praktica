@@ -1,0 +1,18 @@
+.photos-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  .link {
+    display: inline-block;
+    font-size: 1.5rem;
+    background: #8c44d8;
+    border-radius: 9999px;
+    color: white;
+    text-decoration: underline;
+    padding: 1rem 2.25rem;
+    margin-top: 4rem;
+  }
+}
