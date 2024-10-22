@@ -4,6 +4,38 @@
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 4rem;
+  background: #F8F2FF;
+
+  .title{
+    color: black;
+  }
+
+  .swiper {
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: #8c44d8 3px solid;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 
   .link {
     display: inline-block;
@@ -14,5 +46,11 @@
     text-decoration: underline;
     padding: 1rem 2.25rem;
     margin-top: 4rem;
+  }
+
+  @media (max-width: 1024px) {
+    .link {
+      font-size: 1rem;
+    }
   }
 }

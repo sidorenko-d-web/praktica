@@ -58,4 +58,44 @@
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    .stage-item {
+      margin-top: 50px;
+      &:nth-child(2) {
+        margin-top: 50px;
+      }
+      img {
+        display: none;
+      }
+      .item-content {
+        .title {
+          h3,
+          p {
+            font-size: 20px;
+          }
+          p {
+            padding: 0.3rem 2.5rem;
+          }
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .stage-item {
+      .item-content {
+        .title {
+          flex-direction: column;
+          gap: 4;
+          p {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 }

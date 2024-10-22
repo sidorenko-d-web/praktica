@@ -48,4 +48,53 @@
       margin-left: 3rem;
     }
   }
+
+  @media (max-width: 1024px) {
+    .winners-wrapper{
+
+      .item{
+        img{
+          width: 150px;
+        }
+        h3{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    
+    .winners-wrapper{
+      flex-direction: column;
+      margin-bottom: 0;
+      order: 1;
+      
+      .item{
+        transform: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        h3{
+          margin-top: 0;
+          font-size: 20px;
+          font-weight: 500;
+          text-align: start;
+
+          br{
+            display: none;
+          }
+        }
+
+        &:first-child{
+          order: 2;
+        }
+        &:last-child{
+          order: 3;
+        }
+      }
+    }
+  }
 }

@@ -38,7 +38,7 @@
         margin-bottom: 1.5rem;
       }
 
-      button{
+      button {
         display: flex;
         align-items: center;
         background: white;
@@ -51,21 +51,34 @@
         font-weight: 600;
       }
 
-      .buttons{
+      .buttons {
         display: flex;
         flex-wrap: wrap;
         gap: 1.25rem;
       }
     }
   }
-  .link{
-    display: inline-block;
-    font-size: 1.5rem;
-    background: #8c44d8;
-    border-radius: 9999px;
-    color: white;
-    text-decoration: underline;
-    padding: 1rem 2.25rem;
-    margin-top: 4rem;
+
+  @media (max-width: 1024px) {
+    .content {
+      .controls {
+        gap: 1rem;
+        .select {
+          span {
+            font-size: 20px;
+          }
+          img {
+            margin-left: 1rem;
+          }
+        }
+      }
+      .downloads {
+        gap: 1rem;
+
+        .final {
+          gap: 1rem;
+        }
+      }
+    }
   }
 }

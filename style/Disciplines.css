@@ -1,4 +1,4 @@
-.disciplines-section{
+.disciplines-section {
   background-image: url('../images/disciplines-bg.png');
   background-size: cover;
   background-position: center;
@@ -7,16 +7,16 @@
   padding-top: 2rem;
   padding-bottom: 4rem;
 
-  .wrapper{
+  .wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
-    
+
     margin-bottom: 150px;
-    
-    .discipline-item{
-      width: calc((100% - 1.5rem * 2 ) / 3);
+
+    .discipline-item {
+      width: calc((100% - 1.5rem * 2) / 3);
       border: 3px solid #8d43d5;
       border-radius: 15px;
       padding: 1rem;
@@ -24,25 +24,66 @@
       justify-content: center;
       align-items: center;
       background: #fff;
-      
-      .item-title{
+
+      .item-title {
         color: #8d43d5;
         font-size: 1.25rem;
         text-align: center;
       }
     }
 
-    .button{
-      background: #1F0D32;
+    .button {
+      background: #1f0d32;
       border-radius: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      color:white;
+      color: white;
       font-size: 1.25rem;
       text-decoration: none;
-      width: calc((100% - 1.5rem * 2 ) / 3);
+      width: calc((100% - 1.5rem * 2) / 3);
       transform: translateY(calc(100% + 1.5rem));
+    }
+  }
+
+  .buttonMobile {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    .wrapper {
+      margin-bottom: 0;
+      .discipline-item {
+        width: calc((100% - 1.5rem) / 2);
+        .item-title {
+          font-size: 16px;
+        }
+      }
+      .button {
+        display: none;
+      }
+    }
+
+    .buttonMobile {
+      display: flex;
+      background: #1f0d32;
+      border-radius: 9999px;
+      color: white;
+      text-decoration: underline;
+      padding: 1rem 2.25rem;
+      align-self: center;
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .wrapper {
+      .discipline-item {
+        width: 90%;
+        margin: 0 auto;
+      }
     }
   }
 }

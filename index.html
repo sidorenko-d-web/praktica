@@ -21,6 +21,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />as
 </head>
 
 <body>
@@ -113,7 +114,7 @@
           <h3 class="item-title">Web-дизайн</h3>
         </div>
         <div class="discipline-item">
-          <h3 class="item-title">Backend-разработка: Web AP</h3>
+          <h3 class="item-title">Backend-разработка: Web API</h3>
         </div>
         <div class="discipline-item">
           <h3 class="item-title">Автоматизация тестирования (Java)</h3>
@@ -126,6 +127,8 @@
         </div>
         <a href="" class="button">Подробнее</a>
       </div>
+      <a href="" class="buttonMobile">Подробнее</a>
+
     </section>
 
     <section class="participating-section">
@@ -236,19 +239,90 @@
           </div>
         </div>
       </div>
-      <a class="link">Фотоархив</a>
     </section>
 
     <section class="photos-section">
       <h2 class="title">Как это было в прошлые годы?</h2>
-      <div class="slider"></div>
+      <div class="swiper photos-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/images/photos/image (1).png" alt=""></div>
+          <div class="swiper-slide"><img src="/images/photos/image (2).png" alt=""></div>
+          <div class="swiper-slide"><img src="/images/photos/image (4).png" alt=""></div>
+          <div class="swiper-slide"><img src="/images/photos/image 3 (1).png" alt=""></div>
+          <div class="swiper-slide"><img src="/images/photos/image.png" alt=""></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".photos-slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            infinite: true
+          });
+        </script>
+      </div>
       <a class="link">Фотоархив</a>
     </section>
 
     <section class="organizators-section">
       <h2 class="title">Организационный комитет</h2>
-      <div class="slider">
+      <div class="swiper organizators-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="org-item">
+              <img src="/images/orgs/Круглова-Евгения-scaled-e1725001486640.jpg" alt="">
+              <div class="text">
+                <h3>Круглова Евгения</h3>
+                <p>Генеральный директор ITECH</p>
+              </div>
+            </div>
+            <div class="org-item">
+              <div class="text">
+                <h3>Власенко Олег</h3>
+                <p>Заместитель генерального директора <br />SimbirSoft, Главный судья</p>
+              </div>
+              <img src="/images/orgs/photo_2024-09-03_18-38-53.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="org-item">
+              <img src="/images/orgs/dropped_detailed_17ct-5f-1.png" alt="">
+              <div class="text">
+                <h3>Круглова Евгения</h3>
+                <p>Генеральный директор ITECH</p>
+              </div>
+            </div>
+            <div class="org-item">
+              <div class="text">
+                <h3>Власенко Олег</h3>
+                <p>Заместитель генерального директора <br />SimbirSoft, Главный судья</p>
+              </div>
+              <img src="/images/orgs/photo_2024-09-03_18-38-53.jpg" alt="">
+            </div>
+          </div>
+        </div>
 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".organizators-slider", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
       </div>
       <a class="link">Подробнее</a>
     </section>

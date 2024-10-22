@@ -1,5 +1,5 @@
 footer {
-  background: #07020D;
+  background: #07020d;
   padding-top: 5.25rem;
   padding-bottom: 5rem;
 
@@ -12,32 +12,78 @@ footer {
       font-weight: 500;
     }
 
-    .nav, .socials, .docs{
+    .nav,
+    .socials,
+    .docs {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
 
-      h3{
+      h3 {
         font-size: 2rem;
         font-weight: 600;
+        text-transform: uppercase;
       }
     }
 
-    .docs{
+    .docs {
       margin-left: auto;
     }
   }
 
-  .gray-links{
+  .gray-links {
     margin-top: 5rem;
     display: flex;
     justify-content: space-between;
 
-    a{
-      color:white;
-      opacity: .5;
+    a {
+      color: white;
+      opacity: 0.5;
       font-size: 14px;
       text-decoration: none;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    a {
+      font-size: 14px;
+    }
+    .nav,
+    .socials,
+    .docs {
+      h3 {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    a{
+      font-weight: 400 !important;
+    }
+    .white-links {
+      flex-direction: column;
+
+      .nav,
+      .socials {
+        flex: 1 !important;
+        gap: 8px;
+      }
+      .docs {
+        margin-left: 0;
+        gap: 8px;
+      }
+    }
+
+    .gray-links {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-size: 12px;
+      }
     }
   }
 }
