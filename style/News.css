@@ -66,6 +66,10 @@
       .news-item{
         flex: none;
         width:calc((100% - 24px) / 2) ;
+
+        h3{
+          font-size: 18px;
+        }
       }
     }
     .link{

@@ -41,6 +41,7 @@
           background: #8c44d8;
           border-radius: 99999px;
           width: 33px;
+          height: 33px;
           aspect-ratio: 1;
         }
         &:nth-child(3) {

@@ -20,6 +20,17 @@ section, footer {
 
 }
 
+a, button{
+  transition: all 0.3S;
+  &:hover{
+    opacity: 0.9;
+    scale: 1.025;
+  }
+
+  &:active{
+    scale: 0.9;
+  }
+}
 
 
 .title{
